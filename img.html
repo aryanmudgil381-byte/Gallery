@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapify Gallery</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+<button id="uploadBtn">
+    <i class="fa-solid fa-upload"></i> Upload
+</button>
+<input type="file" id="fileInput" accept="image/*,video/*" hidden>
+<div class="container">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-camera"></i>
+            <h2>Snapify</h2>
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="#">
+                    <i class="fa-solid fa-compass"></i>
+                    Explore
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-folder"></i>
+                    Albums
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                    Favorites
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="albums">
+
+            <div class="album-title">
+                <h4>Your Albums</h4>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div class="album-item">
+              <img src="https://picsum.photos/600/400">
+                <div>
+                    <h5>Mountains</h5>
+                    <span>128 Photos</span>
+                </div>
+            </div>
+
+            <div class="album-item">
+                <img src="https://picsum.photos/600/400">
+                <div>
+                    <h5>Travel</h5>
+                    <span>342 Photos</span>
+                </div>
+            </div>
+
+            <div class="album-item">
+                <img src="https://picsum.photos/600/400">
+                <div>
+                    <h5>Nature</h5>
+                    <span>185 Photos</span>
+                </div>
+            </div>
+
+            <div class="album-item">
+                <img src="https://picsum.photos/600/400">
+                <div>
+                    <h5>City</h5>
+                    <span>312 Photos</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom-links">
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header>
+
+            <div class="title">
+                <h1>Gallery made by Mr.Aryan</h1>
+                <p>Discover the moments that matter.</p>
+            </div>
+
+            <div class="top-right">
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search photos...">
+                </div>
+
+                <i class="fa-regular fa-sun mode"></i>
+
+                <img class="profile"
+                src="https://picsum.photos/600/400">
+
+            </div>
+
+        </header>
+
+        <!-- FILTERS -->
+
+        <div class="filters">
+
+            <button class="active">All</button>
+            <button>Nature</button>
+            <button>Travel</button>
+            <button>City</button>
+            <button>People</button>
+            <button>Animals</button>
+            <button>Architecture</button>
+
+        </div>
+
+        
+        <!-- GALLERY -->
+<div class="gallery-controls">
+    <button id="uploadBtn">
+        <i class="fa-solid fa-upload"></i> Add Images / Videos
+    </button>
+
+    <input
+        type="file"
+        id="fileInput"
+        accept="image/*,video/*"
+        multiple
+        hidden>
+</div>
+        <section class="gallery" id="gallery">
+
+            <div class="card large">
+                <img src="https://picsum.photos/600/400">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/600/400">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800">
+
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="card tall">
+                <img src="https://picsum.photos/600/400">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/600/400">   
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/600/400">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/600/400  ">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+        </section>
+
+        <!-- Image Editor -->
+
+<div class="image-editor">
+
+    <div class="preview">
+
+        <img id="previewImage" src="" alt="Preview">
+
+    </div>
+
+    <div class="controls">
+
+        <h2>Image Editor</h2>
+
+        <label>Brightness</label>
+        <input type="range" id="brightness" min="0" max="200" value="100">
+
+        <label>Contrast</label>
+        <input type="range" id="contrast" min="0" max="200" value="100">
+
+        <label>Saturation</label>
+        <input type="range" id="saturation" min="0" max="300" value="100">
+
+        <label>Blur</label>
+        <input type="range" id="blur" min="0" max="10" value="0">
+
+        <label>Grayscale</label>
+        <input type="range" id="grayscale" min="0" max="100" value="0">
+
+        <button id="saveBtn">
+            Save Changes
+        </button>
+
+    </div>
+
+</div>
+
+    </main>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
